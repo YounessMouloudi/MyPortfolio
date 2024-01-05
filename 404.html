@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found</title>
+    <link rel="icon" href="./dist/images/icon_YM.jpg">
+    <link rel="stylesheet" href="./dist/css/tailwindcss.css">
+</head>
+<body class="bg-slate-50">
+    <section>
+        <article class="mx-auto max-w-screen-xl py-36 px-6">
+            <article class="mx-auto max-w-screen-sm text-center">
+                <h1 class="mb-5 text-7xl sm:text-9xl tracking-tight font-extrabold text-slate-900">404</h1>
+                <p class="mb-5 text-3xl tracking-tight font-bold text-slate-900 sm:text-4xl">Something's missing.</p>
+                <p class="mb-5 text-lg sm:text-lg font-normal text-gray-500">Sorry, we can't find that page. You'll find lots to explore on the home page.</p>
+                <a href="/MyPortfolio/" class="inline-flex font-bold text-slate-900 bg-sky-400 hover:text-slate-50 hover:bg-slate-900 focus:ring-4 focus:outline-none focus:ring-sky-300 rounded-lg text-sm px-5 py-2.5 text-center my-4">
+                    Back to Homepage
+                </a>
+            </article>   
+        </article>
+    </section>
+    <script>
+        if (window.location.pathname !== '/MyPortfolio/404.html') {
+            window.location.href="/MyPortfolio/404.html";
+        }
+    </script>
+</body>
+</html>

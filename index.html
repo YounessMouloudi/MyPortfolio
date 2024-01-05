@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="
+    Youness Mouloudi is an aspiring junior web developer, committed to continuous learning and growth. 
+    He has a passion for crafting beautiful and functional websites and applications, 
+    utilizing the latest technologies and industry best practices. His goal is to deliver the best possible 
+    user experience through thoughtful development and innovation.">
+    
+    <meta name="author" content="Youness Mouloudi">
+    <title>Youness Mouloudi</title>
+    <link rel="icon" href="./dist/images/icon_YM.jpg">
+
+    <link rel="stylesheet" href="./dist/css/tailwindcss.css">
+    <link rel="stylesheet" href="./dist/css/style.css">
+    <link rel="stylesheet" href="./dist/css/all.min.css">
+</head>
+<body class="bg-slate-50 dark:bg-dark font-quicksand">
+    <section class="Home" id="Home">
+        <header>
+            <main class="max-w-screen-lg lg:container lg:mx-auto p-6 pt-10">
+                <article class="flex items-center justify-between"> 
+                    <header class="logo">
+                        <a href="/MyPortfolio/" title="Youness Mouloudi">
+                            <h1 class="text-4xl font-italiano tracking-wide font-bold capitalize text-slate-900 dark:text-white hidden lg:flex">Youness Mouloudi</h1>
+                            <h1 class="text-4xl font-italiano tracking-wide font-bold capitalize text-slate-900 dark:text-white lg:hidden">Y M</h1>
+                        </a>
+                    </header>
+                    
+                    <article class="flex">
+                        <label class="hamburger me-4 text-slate-900 dark:text-white md:hidden">
+                            <input type="checkbox" id="btn-checkbox">
+                            <svg viewBox="0 0 32 32" class="w-9 h-9">
+                                <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                                <path class="line" d="M7 16 27 16"></path>
+                            </svg>
+                        </label>                       
+                        
+                        <nav class="hidden md:flex space-x-6 items-center capitalize font-bold text-lg me-6">
+                            <a href="#Home" class="text-sky-500 hover:transition-colors hover:duration-300">Home</a>
+                            <a href="#About" class="text-slate-900 hover:text-sky-500 dark:text-white dark:hover:text-sky-500 transition-colors duration-300">About</a>
+                            <a href="#Education&Skills" class="text-slate-900 hover:text-sky-500 dark:text-white dark:hover:text-sky-500 transition-colors duration-300">Education & Skills</a>
+                            <a href="#Projects" class="text-slate-900 hover:text-sky-500 dark:text-white dark:hover:text-sky-500 transition-colors duration-300">Projects</a>
+                            <a href="#Contact" class="text-slate-900 hover:text-sky-500 dark:text-white dark:hover:text-sky-500 transition-colors duration-300">Contact</a>
+                        </nav>
+    
+                        <button id="theme-toggle" type="button" class="BtnDark text-gray-700 dark:text-gray-100 focus:outline-none rounded-lg text-sm">
+                            <svg id="theme-toggle-dark-icon" class="w-6 h-6 md:w-5 md:h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                            <svg id="theme-toggle-light-icon" class="hidden w-6 h-6 md:w-5 md:h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </article>
+                </article>
+                <article class="md:hidden -mt-8">
+                    <nav id="menu-links" class="menu-links absolute flex flex-col items-center space-y-5 font-bold text-white bg-slate-800 dark:bg-slate-100 py-6 
+                        left-6 right-6 drop-shadow-lg text-lg bordSer border-gray-100 top-20">
+                        <a href="#Home" class="text-sky-500 hover:transition-colors hover:duration-300">Home</a>
+                        <a href="#About" class="hover:text-sky-500 dark:text-slate-900 dark:hover:text-sky-500 transition-colors duration-300">About</a>
+                        <a href="#Education&Skills" class="hover:text-sky-500 dark:text-slate-900 dark:hover:text-sky-500 transition-colors duration-300">Education & Skills</a>
+                        <a href="#Projects" class="hover:text-sky-500 dark:text-slate-900 dark:hover:text-sky-500 transition-colors duration-300">Projects</a>
+                        <a href="#Contact" class="hover:text-sky-500 dark:text-slate-900 dark:hover:text-sky-500 transition-colors duration-300">Contact</a>
+                    </nav>
+                </article>
+                <article class="btn-up">
+                    <button class="px-3 py-2 z-40 rounded-full fixed bottom-2 mb-3 text-white bg-slate-900 dark:text-slate-900 dark:bg-sky-500" id="scrollingButton" title="Go Up">
+                        <i class="fa-solid fa-arrow-up fa-bounce fa-lg"></i>                    
+                    </button>
+                </article>
+            </main>
+            <main class="max-w-screen-lg lg:container lg:mx-auto p-6 pt-10">
+                <article class="flex">
+                    <article class="w-1/6 flex items-center">
+                        <ul class="leading-links flex flex-col justify-center items-center space-y-6 text-xl md:text-2xl text-slate-900 dark:text-white">
+                            <li>
+                                <a href="https://www.linkedin.com/in/youness-mouloudi" target="_blank" title="Reach me via my Linkedin">
+                                    <svg stroke="currentColor" fill="currentColor" class="hover:text-sky-500" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 
+                                        1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 
+                                        1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:Mouloudi.younes94@gmail.com" title="Reach me via my Gmail">
+                                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" fill="currentColor" class="hover:text-sky-500" width="1em" height="1em" viewBox="0 0 643 465"><path d="M39 3.4C31.6 5.1 27.5 7 21.4 11.6 11.2 19.3 5 29.2 3 41.1c-.8 4.5-1 61.4-.8 195.9.3 185.8.3 189.6 2.3 195 4.5 12.6 15.8 24.2 28.2 29.1 5 1.9 8.2 2.3 23.1 2.7l17.2.4V292.6c0-94.4.3-171.6.6-171.6.4 0 56.5 39.8 124.6 88.5l124 88.6 123.6-88.3c67.9-48.6 123.9-88.5 124.4-88.6.4-.2.8 76.8.8 171.2V464h15.3c16.2 0 21.9-1 30.3-5.1 11.3-5.6 21.7-19.2 24.3-31.7.8-3.8 1.1-59.8 1.1-194.5 0-166.8-.2-190-1.5-195.2-4.7-17.7-19.3-31.2-37.6-34.6-5.4-1-7-.9-9.2.2-1.4.8-62.9 44.7-136.6 97.6-73.7 53-134.5 96.3-135 96.3-.6 0-60.8-42.8-133.8-95.2C115.2 49.4 54 5.6 52.1 4.3c-3.8-2.6-5.2-2.7-13.1-.9z"></path></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/YounessMouloudi" target="_blank" title="Explore my projects on GitHub">
+                                    <svg stroke="currentColor" fill="currentColor" class="hover:text-sky-500" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 
+                                        2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 
+                                        3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </article>
+                    <article class="flex flex-wrap-reverse justify-between gap-y-6 md:flex-row py-8">
+                        <article class="leading-texte md:w-1/2 px-2 md:px-2 lg:px-1 flex flex-col justify-center space-y-6 text-center md:text-left text-slate-900">
+                            <h1 class="font-bold text-xl sm:text-2xl lg:text-3xl font-libre dark:text-white w-fit mx-auto md:mx-0">
+                                <span>Hi,</span><br>
+                                <span class="name whitespace-nowrap">I'm <span class="text-sky-500">Youness Mouloudi</span></span>
+                            </h1>
+                            <h2 class="font-bold text-xl sm:text-2xl dark:text-white"><span class="text-sky-500">I'm a </span> <span class="capitalize">web developper</span></h2>
+                            <p class="lg:text-lg md:pr-5 xl:pr-2 dark:text-white font-medium">
+                                I'm keen to learn and grow in the world of web development. While I may not have extensive experience, 
+                                my curiosity and passion drive me to explore and tackle new challenges. I look forward to building my skills, 
+                                contributing to meaningful projects, and creating useful websites. Feel free to contact me.
+                            </p>
+                            <a href="#Contact" class="self-center font-bold md:self-start py-2 px-6 rounded-full capitalize tracking-wide text-slate-900 bg-sky-400 hover:text-slate-50 hover:bg-slate-900 dark:text-slate-900 dark:hover:bg-slate-50" title="Contact Me">
+                                Contact Me 
+                            </a>
+                        </article>    
+                        <figure class="leading-image w-10/12 mx-auto md:w-1/2 md:mx-0">
+                            <img src="./dist/images/developper.svg" alt="">
+                        </figure>
+                    </article>
+                </article>
+            </main>
+        </header>
+    </section>
+
+    <!-- start about -->
+    <section class="about" id="About">
+        <main class="max-w-screen-lg lg:container lg:mx-auto p-6 pt-10">
+            <header class="main-heading">
+                <h2 class="relative text-slate-900 text-center capitalize font-playfair font-semibold text-3xl
+                dark:text-white dark:before:bg-white dark:after:bg-dark">About Me</h2>
+            </header>
+            <section class="about-content pt-10">
+                <article class="grid grid-cols-12 my-20 gap-y-24 md:gap-x-10 md:pr-8">
+                    <article class="col-span-12 md:col-span-5 mx-auto">
+                        <article class="about-image relative rounded-lg">
+                            <article class="box-image relative bg-sky-200 rounded-xl">
+                                <figure class="image relative rounded-lg">
+                                    <img src="./dist/images/Photo_CV.jpg" alt="Youness Mouloudi" class="w-40 sm:w-60 rounded-lg">
+                                </figure>
+                            </article>
+                        </article>
+                    </article>
+                    <article class="px-2 md:pe-4 col-span-12 md:col-span-7 text-slate-900 dark:text-white">
+                        <h1 class="text-center mb-7 md:text-left text-2xl font-playfair capitalize font-semibold"><span class="text-xl">👋</span> Welcome to my <span class="text-sky-500">portfolio </span>website!</h1>
+                        <p class="text-center md:text-left lg:text-lg font-medium mb-8">
+                            I'm a passionate novice web developer, eager to learn and grow. I lean a bit more towards backend development than frontend development. 
+                            My passion lies in building innovative solutions to address real-world problems. I'm continually working to expand my knowledge 
+                            and skills in this field, and i always want to be able to meet the goals of my clients. Through this website, i aim to showcase my 
+                            projects and demonstrate proficiency in various programming languages and technologies. Feel free to browse my work and contact me 
+                            if you have any questions or opportunities for collaboration.
+                        </p>
+                        <article class="inline-flex items-center justify-center w-full md:w-auto mb-8">
+                            <hr class="w-60 sm:w-64 md:w-72 h-1 my-8 bg-slate-800 border-0 rounded dark:bg-slate-500">
+                            <figure class="absolute px-4 bg-slate-50 dark:bg-dark">
+                                <svg class="w-4 h-4 text-gray-700 dark:text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+                                    <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
+                                </svg>
+                            </figure>
+                        </article>
+                        <article class="flex flex-wrap justify-center items-center md:justify-start gap-7 mb-12">
+                            <a href="./dist/CV_MOULOUDI YOUNESS.pdf" download="CV_MOULOUDI YOUNESS.pdf" class="px-5 py-2.5 focus:outline-none bg-sky-400 text-sm text-slate-900 hover:text-slate-50 hover:bg-slate-900 dark:text-slate-900 dark:hover:bg-slate-50 rounded-lg font-bold" title="Download My CV">
+                                <span class="me-1">Download CV</span> 
+                                <i class="fa-solid fa-download fa-lg"></i>
+                            </a>
+                            <a href="./dist/CV_MOULOUDI YOUNESS.pdf" target="_blank" class="px-5 py-2.5 focus:outline-none bg-sky-400 text-sm text-slate-900 hover:text-slate-50 hover:bg-slate-900 dark:text-slate-900 dark:hover:bg-slate-50 rounded-lg font-bold" title="View My CV Online">
+                                <span class="me-1">View CV</span>
+                                <i class="fa-solid fa-file-pdf fa-lg"></i>
+                            </a>
+                        </article>
+                    </article>
+                </article>
+            </section>
+        </main>
+    </section>
+    <!-- end about -->
+
+    <!-- start education & skills-->
+    <section class="Education&Skills " id="Education&Skills">
+        <main class="container mx-auto p-6 pt-10">
+            <header class="main-heading">
+                <h2 class="relative text-slate-900 text-center capitalize font-playfair font-semibold text-3xl
+                dark:text-white dark:before:bg-white dark:after:bg-dark">Education & Skills</h2>
+            </header>
+            <section class="main-content py-16">
+                <section class="education-content">
+                    <header class="main-education">
+                        <h5 class="text-center pt-16 pb-12 capitalize italic font-medium text-slate-900 dark:text-white">My Academic Journey</h5>
+                    </header>
+                    <article class="body-education relative left-6 top-4 mb-16 lg:left-0 lg:px-4 after:left-0 lg:after:left-1/2 dark:after:bg-sky-500">
+                        <article class="box-left pt-3 pb-6 ps-14 pe-6 sm:px-14 lg:w-1/2 relative lg:left-0 after:left-0 lg:after:left-full dark:after:bg-sky-500">
+                            <article class="box-text bg-slate-300 dark:bg-slate-100 rounded-lg p-4 ">
+                                <h2 class="mb-1 text-xl font-bold">Ibn Tofail University - Faculty of Science In Kénitra</h2>
+                                <h3 class="mb-4 font-sans">2022-2023</h3>
+                                <p class="text-lg font-medium">University Degree Specialized In DWMA <h6 class="text-xs font-medium">(Development of Web and Mobile Applications)</h6></p>
+                            </article>
+                        </article>
+                        <article class="box-right pt-3 pb-6 ps-14 pe-6 sm:px-14 rounded-lg lg:w-1/2 relative lg:left-1/2 after:left-0 dark:after:bg-sky-500">
+                            <article class="box-text bg-slate-300 dark:bg-slate-100 rounded-lg p-4">
+                                <h2 class="mb-1 text-xl font-bold">Specialized Institute Of Applied Technology (Ofppt) - Salé</h2>
+                                <h3 class="mb-4 font-sans">2020-2022</h3>
+                                <p class="text-lg font-medium">Technician Specialized In IT Development Techniques</p>
+                            </article>
+                        </article>
+                        <article class="box-left pt-3 pb-6 ps-14 pe-6 sm:px-14 rounded-lg lg:w-1/2 relative lg:left-0 after:left-0 lg:after:left-full dark:after:bg-sky-500">
+                            <article class="box-text bg-slate-300 dark:bg-slate-100 rounded-lg p-4">
+                                <h2 class="mb-1 text-xl font-bold">Faculty Of Science In Rabat</h2>
+                                <h3 class="mb-4 font-sans">2012-2017</h3>
+                                <p class="text-lg font-medium">Fundamental Bachelor's Degree In Chemistry Sciences</p>
+                            </article>
+                        </article>
+                        <article class="box-right pt-3 pb-2 ps-14 pe-6 sm:px-14 rounded-lg lg:w-1/2 relative lg:left-1/2 after:left-0 dark:after:bg-sky-500">
+                            <article class="box-text bg-slate-300 dark:bg-slate-100 rounded-lg p-4">
+                                <h2 class="mb-1 text-xl font-bold">Ibn El Khatib Salé High School</h2>
+                                <h3 class="mb-4 font-sans">2011-2012</h3>
+                                <p class="text-lg font-medium">Baccalaureate Experimental Science</p>
+                            </article>
+                        </article>
+                    </article>
+                </section>
+                <section class="skills-content pt-12 lg:px-12">
+                    <header class="main-skills">
+                        <h5 class="text-center pt-8 pb-12 capitalize italic font-medium text-slate-900 dark:text-white">my skills set</h5>
+                    </header>
+                    <article class="body-skills pt-3 flex justify-center sm:w-11/12 sm:mx-auto flex-col md:flex-row gap-y-11 gap-x-16" id="accordion-flush" data-accordion="collapse">
+                        <article class="front-end w-full lg:w-1/2">
+                            <h2 id="accordion-flush-heading-1">
+                                <article class="flex items-center justify-center gap-3 text-lg">
+                                    <figure class="p-2 sm:p-3 bg-slate-900 dark:bg-slate-50 rounded-full">
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="w-6 h-6 text-white dark:text-slate-900" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"></path><path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v2H1V3a1 1 0 0 1 1-1h12zM1 13V6h4v8H2a1 1 0 0 1-1-1zm5 1V6h9v7a1 1 0 0 1-1 1H6z"></path></svg>
+                                    </figure>
+                                    <button type="button" class="flex items-center justify-between w-full py-5 px-2 bg-transparent text-slate-900 border-b border-gray-400  dark:border-gray-700 dark:bg-transparent gap-3" data-accordion-target="#accordion-flush-body-1" aria-expanded="false" aria-controls="accordion-flush-body-1" title="View Front-End Skills">
+                                      <span class="font-bold text-xl text-slate-900 dark:text-white">Front End - Skills</span>
+                                      <svg data-accordion-icon class="w-3 h-3 shrink-0 text-slate-900 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"/>
+                                      </svg>
+                                    </button>
+                                </article>
+                            </h2>
+                            <article id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+                                <article class="flex ms-14 lg:ms-16">
+                                    <article class="box-progressbar py-5 w-full space-y-1 uppercase text-slate-900">
+                                        <article class="flex items-center space-x-3">
+                                            <figure class="bg-red-200 p-2 rounded-full">
+                                                <i class="fa-brands fa-html5 fa-xl px-1 text-red-500"></i>
+                                            </figure>
+                                            <article class="w-full">
+                                                <article class="mb-1 text-base font-medium dark:text-white">Html</article>
+                                                <article class="w-full bg-gray-300 rounded-full h-2 mb-4 dark:bg-slate-600">
+                                                    <article class="bg-slate-700 h-2 rounded-full dark:bg-slate-300" style="width: 90%"></article>
+                                                </article>
+                                            </article>
+                                        </article>
+                                        <article class="flex items-center space-x-3">
+                                            <figure class="bg-blue-200 p-2 rounded-full">
+                                                <i class="fa-brands fa-css3-alt fa-xl px-1 text-blue-600"></i>
+                                            </figure>
+                                            <article class="w-full">
+                                                <article class="mb-1 text-base font-medium dark:text-white">Css</article>
+                                                <article class="w-full bg-gray-300 rounded-full h-2 mb-4 dark:bg-slate-600">
+                                                    <article class="bg-slate-700 h-2 rounded-full dark:bg-slate-300" style="width: 80%"></article>
+                                                </article>
+                                            </article>
+                                        </article>
+                                        <article class="flex items-center space-x-3">
+                                            <figure class="bg-violet-200 p-2 rounded-full">
+                                                <i class="fa-brands fa-bootstrap fa-xl text-violet-700"></i>
+                                            </figure>
+                                            <article class="w-full">
+                                                <article class="mb-1 text-base font-medium dark:text-white">Bootstrap</article>
+                                                <article class="w-full bg-gray-300 rounded-full h-2 mb-4 dark:bg-slate-600">
+                                                    <article class="bg-slate-700 h-2 rounded-full dark:bg-slate-300" style="width: 75%"></article>
+                                                </article>
+                                            </article>
+                                        </article>
+                                        <article class="flex items-center space-x-3">
+                                            <figure class="bg-sky-100 p-2 rounded-full">
+                                                <svg class="w-7 h-7 text-sky-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
+                                                    <path d="M9.782.72a4.773 4.773 0 0 0-4.8 4.173 3.43 3.43 0 0 1 2.741-1.687c1.689 0 2.974 1.972 3.758 2.587a5.733 5.733 0 0 0 5.382.935c2-.638 2.934-2.865 3.137-3.921-.969 1.379-2.44 2.207-4.259 1.231C14.488 3.365 13.551.6 9.782.72ZM4.8 6.979A4.772 4.772 0 0 0 0 11.151a3.43 3.43 0 0 1 2.745-1.687c1.689 0 2.974 1.972 3.758 2.587a5.733 5.733 0 0 0 5.382.935c2-.638 2.933-2.865 3.137-3.921-.97 1.379-2.44 2.208-4.259 1.231C9.51 9.623 8.573 6.853 4.8 6.979Z"/>
+                                                  </svg>
+                                            </figure>
+                                            <article class="w-full">
+                                                <article class="mb-1 text-base font-medium dark:text-white">Tailwind Css</article>
+                                                <article class="w-full bg-gray-300 rounded-full h-2 mb-4 dark:bg-slate-600">
+                                                    <article class="bg-slate-700 h-2 rounded-full dark:bg-slate-300" style="width: 75%"></article>
+                                                </article>
+                                            </article>
+                                        </article>
+                                        <article class="flex items-center space-x-3">
+                                            <figure class="bg-dark p-2 rounded-full">
+                                                <i class="fa-brands fa-js fa-xl p-0.5 text-yellow-200"></i>                                            
+                                            </figure>
+                                            <article class="w-full">
+                                                <article class="mb-1 text-base font-medium dark:text-white">Javascript</article>
+                                                <article class="w-full bg-gray-300 rounded-full h-2 mb-4 dark:bg-slate-600">
+                                                    <article class="bg-slate-700 h-2 rounded-full dark:bg-slate-300" style="width: 65%"></article>
+                                                </article>
+                                            </article>
+                                        </article>
+                                        <article class="flex items-center space-x-3">
+                                            <figure class="bg-blue-100 p-2 rounded-full">
+                                                <i class="fa-brands fa-react fa-xl p-0.5 text-blue-700"></i>
+                                            </figure>
+                                            <article class="w-full">
+                                                <article class="mb-1 text-base font-medium dark:text-white">React Js</article>
+                                                <article class="w-full bg-gray-300 rounded-full h-2 mb-4 dark:bg-slate-600">
+                                                    <article class="bg-slate-700 h-2 rounded-full dark:bg-slate-300" style="width: 60%"></article>
+                                                </article>
+                                            </article>
+                                        </article>
+                                    </article>
+                                </article>
+                            </article>
+                        </article> 
+                        <article class="back-end w-full lg:w-1/2">
+                            <h2 id="accordion-flush-heading-2">
+                                <article class="flex items-center justify-center gap-3 text-lg">
+                                    <figure class="p-2 sm:p-3 bg-slate-900 dark:bg-slate-50 rounded-full">
+                                        <svg class="w-5 h-5 sm:w-6 sm:h-6 text-white dark:text-slate-900" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 20">
+                                            <path d="M8 5.625c4.418 0 8-1.063 8-2.375S12.418.875 8 .875 0 1.938 0 3.25s3.582 2.375 8 2.375Zm0 13.5c4.963 0 8-1.538 8-2.375v-4.019c-.052.029-.112.054-.165.082a8.08 8.08 0 0 1-.745.353c-.193.081-.394.158-.6.231l-.189.067c-2.04.628-4.165.936-6.3.911a20.601 20.601 0 0 1-6.3-.911l-.189-.067a10.719 10.719 0 0 1-.852-.34 8.08 8.08 0 0 1-.493-.244c-.053-.028-.113-.053-.165-.082v4.019C0 17.587 3.037 19.125 8 19.125Zm7.09-12.709c-.193.081-.394.158-.6.231l-.189.067a20.6 20.6 0 0 1-6.3.911 20.6 20.6 0 0 1-6.3-.911l-.189-.067a10.719 10.719 0 0 1-.852-.34 8.08 8.08 0 0 1-.493-.244C.112 6.035.052 6.01 0 5.981V10c0 .837 3.037 2.375 8 2.375s8-1.538 8-2.375V5.981c-.052.029-.112.054-.165.082a8.08 8.08 0 0 1-.745.353Z"/>
+                                          </svg>
+                                    </figure>
+                                    <button type="button" class="flex items-center justify-between w-full py-5 px-2 bg-transparent text-slate-900 border-b border-gray-400 dark:border-gray-700 dark:bg-transparent gap-3" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2" title="View Back-End Skills">
+                                      <span class="font-bold text-xl text-slate-900 dark:text-white">Back End - Skills</span>
+                                      <svg data-accordion-icon class="w-3 h-3 shrink-0 text-slate-900 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="m1 1 5.326 5.7a.909.909 0 0 0 1.348 0L13 1"/>
+                                      </svg>
+                                    </button>
+                                </article>
+                            </h2>
+                            <article id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+                                <article class="flex ms-16">
+                                    <article class="box-progressbar py-5 w-full space-y-1 uppercase text-slate-900">
+                                        <article class="flex items-center space-x-3">
+                                            <figure class="bg-violet-200 p-2 rounded-full">
+                                                <i class="fa-brands fa-php fa-xl text-violet-900"></i>
+                                            </figure>
+                                            <article class="w-full">
+                                                <article class="mb-1 text-base font-medium dark:text-white">Php</article>
+                                                <article class="w-full bg-gray-300 rounded-full h-2 mb-4 dark:bg-slate-600">
+                                                    <article class="bg-slate-700 h-2 rounded-full dark:bg-slate-300" style="width: 75%"></article>
+                                                </article>
+                                            </article>
+                                        </article>
+                                        <article class="flex items-center space-x-3">
+                                            <figure class="bg-red-100 p-2 rounded-full">
+                                                <i class="fa-brands fa-laravel fa-xl p-1 text-red-600"></i>
+                                            </figure>
+                                            <article class="w-full">
+                                                <article class="mb-1 text-base font-medium dark:text-white">Laravel</article>
+                                                <article class="w-full bg-gray-300 rounded-full h-2 mb-4 dark:bg-slate-600">
+                                                    <article class="bg-slate-700 h-2 rounded-full dark:bg-slate-300" style="width: 75%"></article>
+                                                </article>
+                                            </article>
+                                        </article>
+                                        <article class="flex items-center space-x-3">
+                                            <figure class="bg-sky-100 py-2 px-3 rounded-full">
+                                                <img src="./dist/images/java-icon.png" class="w-7 h-7" alt="Java">
+                                            </figure>
+                                            <article class="w-full">
+                                                <article class="mb-1 text-base font-medium dark:text-white">Java</article>
+                                                <article class="w-full bg-gray-300 rounded-full h-2 mb-4 dark:bg-slate-600">
+                                                    <article class="bg-slate-700 h-2 rounded-full dark:bg-slate-300" style="width: 75%"></article>
+                                                </article>
+                                            </article>
+                                        </article>
+                                        <article class="flex items-center space-x-3">
+                                            <figure class="bg-violet-200 py-2 px-3 rounded-full">
+                                                <img src="./dist/images/csharp.svg" class="w-7 h-7" alt="Csharp">
+                                            </figure>
+                                            <article class="w-full">
+                                                <article class="mb-1 text-base font-medium dark:text-white">C#</article>
+                                                <article class="w-full bg-gray-300 rounded-full h-2 mb-4 dark:bg-slate-600">
+                                                    <article class="bg-slate-700 h-2 rounded-full dark:bg-slate-300" style="width: 60%"></article>
+                                                </article>
+                                            </article>
+                                        </article>
+                                        <article class="flex items-center space-x-3">
+                                            <figure class="bg-slate-200 px-1 rounded-full">
+                                                <img src="./dist/images/mysql.svg" class="w-12 h-12" alt="Mysql">   
+                                            </figure>
+                                            <article class="w-full">
+                                                <article class="mb-1 text-base font-medium dark:text-white capitalize">MySQL - PL/SQL</article>
+                                                <article class="w-full bg-gray-300 rounded-full h-2 mb-4 dark:bg-slate-600">
+                                                    <article class="bg-slate-700 h-2 rounded-full dark:bg-slate-300" style="width: 70%"></article>
+                                                </article>
+                                            </article>
+                                        </article>
+                                        <article class="flex items-center space-x-3">
+                                            <figure class="bg-slate-200 p-2 rounded-full">
+                                                <img src="./dist/images/logo-uml.png" class="w-9 h-8" alt="UML">   
+                                            </figure>
+                                            <article class="w-full">
+                                                <article class="mb-1 text-base font-medium dark:text-white">UML - Merise</article>
+                                                <article class="w-full bg-gray-300 rounded-full h-2 mb-4 dark:bg-slate-600">
+                                                    <article class="bg-slate-700 h-2 rounded-full dark:bg-slate-300" style="width: 70%"></article>
+                                                </article>
+                                            </article>
+                                        </article>
+                                    </article>
+                                </article>
+                            </article>
+                        </article>
+                    </article>
+                </section>
+            </section>
+        </main>
+    </section>
+    <!-- end education & skills-->
+
+    <!-- start Projects -->
+    <section class="projects" id="Projects">
+        <main class="container mx-auto p-6 pt-10">
+            <header class="main-heading">
+                <h2 class="relative text-slate-900 text-center capitalize font-playfair font-semibold text-3xl
+                dark:text-white dark:before:bg-white dark:after:bg-dark">Projects</h2>
+            </header>
+            <section class="main-content pb-28 pt-16">
+                <article id="indicators-carousel" class="relative w-full top-9 py-3 xl:pb-5" data-carousel="static">
+                    <!-- Carousel wrapper -->
+                    <article class="relative carousel overflow-hidden lg:left-2 sm:h-96">                        
+                        <article class="hidden duration-700 ease-in-out bg-slate-50 dark:bg-dark lg:pt-3" data-carousel-item="active">
+                            <article class="box-carousel flex flex-wrap gap-y-3 sm:gap-x-2 sm:px-2">
+                                <figure class="box-image w-full lg:w-custom48 xl:p-2">
+                                    <img src="./dist/images/Projet_location_car.png" class="w-full sm:h-72 md:h-80 rounded" alt="Car Rental Management Website" title="Car Rental Management Website">
+                                </figure>
+                                <article class="box-description flex flex-col justify-center w-full lg:w-1/2 px-3 leading-7">
+                                    <h2 class="mb-4 sm:mb-5 text-xl xl:text-2xl font-bold capitalize dark:text-white">Car Rental Management Website</h2>
+                                    <article class="flex flex-wrap mb-3 gap-2 font-bold capitalize">
+                                        <p class="px-4 rounded-full text-slate-900 dark:text-slate-50 border border-sky-500 mb-1">Html</p>
+                                        <p class="px-4 rounded-full text-slate-900 dark:text-slate-50 border border-sky-500 mb-1">Css</p>
+                                        <p class="px-4 rounded-full text-slate-900 dark:text-slate-50 border border-sky-500 mb-1">Bootstrap5</p>
+                                        <p class="px-4 rounded-full text-slate-900 dark:text-slate-50 border border-sky-500 mb-1">Js</p>
+                                        <p class="px-4 rounded-full text-slate-900 dark:text-slate-50 border border-sky-500 mb-1">Php</p>
+                                        <p class="px-4 rounded-full text-slate-900 dark:text-slate-50 border border-sky-500 mb-1">Laravel</p>
+                                        <p class="px-4 rounded-full text-slate-900 dark:text-slate-50 border border-sky-500 mb-1">SweetAlert2</p>
+                                    </article>
+                                    <p class="mb-4 lg:w-11/12 dark:text-white font-medium">
+                                        FSK Location is my graduation project, presents a comprehensive car rental platform with dashboards for both customers and administrators.
+                                        The interface, simple and responsive, enables users to search, book, and manage their rentals. 
+                                        Administrators have a complete dashboard for vehicle, customer, and reservation management.
+                                    </p>
+                                    <article class="mt-2 flex flex-wrap items-center gap-4 self-center sm:self-start">
+                                        <a href="https://github.com/YounessMouloudi/Car_Rental_Management_Website" target="_blank" class="w-fit capitalize tracking-wide bg-sky-400 hover:text-slate-50 hover:bg-slate-900 dark:text-slate-900 dark:hover:bg-slate-50 focus:ring-4 focus:outline-none focus:ring-sky-300 rounded-lg text-sm px-9 py-1.5 dark:bg-sky-500" title="View Code in GitHub">
+                                            <svg stroke="currentColor" fill="currentColor" class="" stroke-width="0" viewBox="0 0 16 16" height="1.7em" width="1.7em" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 
+                                                2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 
+                                                3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                                            </svg>        
+                                        </a>
+                                        <!-- <a href="" target="_blank" class="w-fit capitalize tracking-wide bg-sky-400 hover:text-slate-50 hover:bg-slate-900 dark:text-slate-900 dark:hover:bg-slate-50 focus:ring-4 focus:outline-none focus:ring-sky-300 font-bold rounded-lg text-sm px-4 py-2 dark:bg-sky-500">see project</a> -->
+                                    </article>
+                                </article>
+                            </article>
+                        </article>
+                        <article class="hidden duration-700 ease-in-out bg-slate-50 dark:bg-dark lg:pt-3" data-carousel-item>
+                            <article class="box-carousel flex flex-wrap gap-y-4 sm:gap-x-2 sm:px-2">
+                                <figure class="box-image w-full lg:w-custom48 xl:p-2">
+                                    <img src="./dist/images/Projet_Ecommerce_Livewire.png" class="w-full sm:h-72 md:h-80 rounded" alt="Ecommerce Website" title="Ecommerce Website">
+                                </figure>
+                                <article class="box-description flex flex-col justify-center w-full lg:w-1/2 px-3 leading-7">
+                                    <h2 class="mb-4 sm:mb-5 text-xl xl:text-2xl font-bold capitalize dark:text-white">Ecommerce Website</h2>
+                                    <article class="flex flex-wrap mb-4 gap-2 font-bold capitalize">
+                                        <p class="px-4 rounded-full text-slate-900 dark:text-slate-50 border border-sky-500 mb-1">Html</p>
+                                        <p class="px-4 rounded-full text-slate-900 dark:text-slate-50 border border-sky-500 mb-1">Css</p>
+                                        <p class="px-4 rounded-full text-slate-900 dark:text-slate-50 border border-sky-500 mb-1">Bootstrap5</p>
+                                        <p class="px-4 rounded-full text-slate-900 dark:text-slate-50 border border-sky-500 mb-1">Js</p>
+                                        <p class="px-4 rounded-full text-slate-900 dark:text-slate-50 border border-sky-500 mb-1">Php</p>
+                                        <p class="px-4 rounded-full text-slate-900 dark:text-slate-50 border border-sky-500 mb-1">Laravel</p>
+                                        <p class="px-4 rounded-full text-slate-900 dark:text-slate-50 border border-sky-500 mb-1">Livewire</p>
+                                        <p class="px-4 rounded-full text-slate-900 dark:text-slate-50 border border-sky-500 mb-1">other Js libraries</p>
+                                    </article>
+                                    <p class="mb-4 lg:w-11/12 dark:text-white font-medium">
+                                        This website is easy to use and responsive, ensuring a smooth online shopping experience. 
+                                        It features a dashboard for administrators to oversee customers, products, categories, brands, and order details. 
+                                        Customers, on the other hand, manage their orders, wishlists, carts, and update personal information.
+                                    </p>
+                                    <article class="mt-2 flex flex-wrap items-center gap-4 self-center sm:self-start">
+                                        <a href="https://github.com/YounessMouloudi/Ecommerce_Website_Livewire" target="_blank" class="w-fit capitalize tracking-wide bg-sky-400 hover:text-slate-50 hover:bg-slate-900 dark:text-slate-900 dark:hover:bg-slate-50 focus:ring-4 focus:outline-none focus:ring-sky-300 rounded-lg text-sm px-9 py-1.5 dark:bg-sky-500" title="View Code in GitHub">
+                                            <svg stroke="currentColor" fill="currentColor" class="" stroke-width="0" viewBox="0 0 16 16" height="1.7em" width="1.7em" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 
+                                                2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 
+                                                3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                                            </svg>        
+                                        </a>
+                                        <!-- <a href="" target="_blank" class="w-fit capitalize tracking-wide bg-sky-400 hover:text-slate-50 hover:bg-slate-900 dark:text-slate-900 dark:hover:bg-slate-50 focus:ring-4 focus:outline-none focus:ring-sky-300 font-bold rounded-lg text-sm px-4 py-2 dark:bg-sky-500">see project</a> -->
+                                    </article>
+                                </article>
+                            </article>
+                        </article>
+                        <article class="hidden duration-700 ease-in-out bg-slate-50 dark:bg-dark lg:pt-3" data-carousel-item>
+                            <article class="box-carousel flex flex-wrap gap-y-4 sm:gap-x-2 sm:px-2">
+                                <figure class="box-image w-full lg:w-custom48 xl:p-2">
+                                    <img src="./dist/images/App_web_chat.png" class="w-full sm:h-72 md:h-80 rounded" alt="Web Chat Application" title="Web Chat Application">
+                                </figure>
+                                <article class="box-description flex flex-col justify-center w-full lg:w-1/2 px-3 leading-7">
+                                    <h2 class="mb-4 sm:mb-5 text-xl xl:text-2xl font-bold capitalize text-slate-900 dark:text-white">Web Chat Application</h2>
+                                    <article class="flex flex-wrap mb-4 gap-2 font-bold capitalize">
+                                        <p class="px-4 rounded-full text-slate-900 dark:text-slate-50 border border-sky-500 mb-1">Html</p>
+                                        <p class="px-4 rounded-full text-slate-900 dark:text-slate-50 border border-sky-500 mb-1">Css</p>
+                                        <p class="px-4 rounded-full text-slate-900 dark:text-slate-50 border border-sky-500 mb-1">Bootstrap5</p>
+                                        <p class="px-4 rounded-full text-slate-900 dark:text-slate-50 border border-sky-500 mb-1">Ajax</p>
+                                        <p class="px-4 rounded-full text-slate-900 dark:text-slate-50 border border-sky-500 mb-1">Php</p>
+                                    </article>
+                                    <p class="mb-4 lg:w-11/12 text-slate-900 dark:text-white font-medium">
+                                        This webpage is a simple chat application designed for registered users. 
+                                        It includes two separate pages—one for user registration in the database and another for logging into the application.
+                                    </p>
+                                    <article class="mt-2 flex flex-wrap items-center gap-4 self-center sm:self-start">
+                                        <a href="https://github.com/YounessMouloudi/Web_App_Chat" target="_blank" class="w-fit capitalize tracking-wide bg-sky-400 hover:text-slate-50 hover:bg-slate-900 dark:text-slate-900 dark:hover:bg-slate-50 focus:ring-4 focus:outline-none focus:ring-sky-300 rounded-lg text-sm px-9 py-1.5 dark:bg-sky-500" title="View Code in GitHub">
+                                            <svg stroke="currentColor" fill="currentColor" class="" stroke-width="0" viewBox="0 0 16 16" height="1.7em" width="1.7em" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 
+                                                2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 
+                                                3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                                            </svg>        
+                                        </a>
+                                        <!-- <a href="" target="_blank" class="w-fit capitalize tracking-wide bg-sky-400 hover:text-slate-50 hover:bg-slate-900 dark:text-slate-900 dark:hover:bg-slate-50 focus:ring-4 focus:outline-none focus:ring-sky-300 font-bold rounded-lg text-sm px-4 py-2 dark:bg-sky-500">see project</a> -->
+                                    </article>
+                                </article>
+                            </article>
+                        </article>
+                        <article class="hidden duration-700 ease-in-out bg-slate-50 dark:bg-dark lg:pt-3" data-carousel-item>
+                            <article class="box-carousel flex flex-wrap gap-y-4 sm:gap-x-2 sm:px-2">
+                                <figure class="box-image w-full lg:w-custom48 xl:p-2">
+                                    <img src="./dist/images/Gestion_Bibliotheque.jpg" class="w-full sm:h-72 md:h-80 rounded" alt="Desktop Application for Book Management" title="Desktop Application for Book Management">
+                                </figure>
+                                <article class="box-description flex flex-col justify-center w-full lg:w-1/2 px-3 leading-7">
+                                    <h2 class="mb-4 sm:mb-5 text-xl xl:text-2xl font-bold capitalize dark:text-white">Desktop Application for Book Management</h2>
+                                    <article class="flex flex-wrap mb-4 gap-2 font-bold capitalize">
+                                        <p class="px-4 rounded-full text-slate-900 dark:text-slate-50 border border-sky-500 mb-1">C#</p>
+                                        <p class="px-4 rounded-full text-slate-900 dark:text-slate-50 border border-sky-500 mb-1">SQL Server</p>
+                                    </article>
+                                    <p class="mb-4 lg:w-11/12 dark:text-white font-medium">
+                                        AppBiblio is a desktop application I developed during my internship at Ofppt for managing books.
+                                        It enables users to perform actions such as logging in, registering, displaying all library books, adding or deleting books,
+                                        searching in various ways, and managing book themes.
+                                    </p>
+                                    <article class="mt-2 flex flex-wrap items-center gap-4 self-center sm:self-start">
+                                        <a href="https://github.com/YounessMouloudi/Book_Managment" target="_blank" class="w-fit capitalize tracking-wide bg-sky-400 hover:text-slate-50 hover:bg-slate-900 dark:text-slate-900 dark:hover:bg-slate-50 focus:ring-4 focus:outline-none focus:ring-sky-300 rounded-lg text-sm px-9 py-1.5 dark:bg-sky-500" title="View Code in GitHub">
+                                            <svg stroke="currentColor" fill="currentColor" class="" stroke-width="0" viewBox="0 0 16 16" height="1.7em" width="1.7em" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 
+                                                2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 
+                                                3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                                            </svg>        
+                                        </a>
+                                        <!-- <a href="" target="_blank" class="w-fit capitalize tracking-wide bg-sky-400 hover:text-slate-50 hover:bg-slate-900 dark:text-slate-900 dark:hover:bg-slate-50 focus:ring-4 focus:outline-none focus:ring-sky-300 font-bold rounded-lg text-sm px-4 py-2 dark:bg-sky-500">see project</a> -->
+                                    </article>
+                                </article>
+                            </article>
+                        </article>
+                    </article>
+
+                    <!-- Slider indicators -->
+                    <article class="indicators absolute z-20 flex -translate-x-1/2 space-x-3 -bottom-6 left-1/2">
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                    </article>
+                    <!-- Slider controls -->
+                    <button type="button" class="absolute -top-10 md:top-0 start-0 lg:-start-6 z-20 flex items-center justify-center h-1/2 sm:h-3/5 md:h-full px-1 cursor-pointer" data-carousel-prev>
+                        <figure class="inline-flex items-center justify-center w-10 h-10 rounded-full">
+                            <svg class="w-4 h-4 text-sky-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                            </svg>
+                            <span class="sr-only">Previous</span>
+                        </figure>
+                    </button>
+                    <button type="button" class="absolute -top-10 md:top-0 end-0 lg:-end-6 z-20 flex items-center justify-center h-1/2 sm:h-3/5 md:h-full px-1 cursor-pointer" data-carousel-next>
+                        <figure class="inline-flex items-center justify-center w-10 h-10 rounded-full">
+                            <svg class="w-4 h-4 text-sky-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                            </svg>
+                            <span class="sr-only">Next</span>
+                        </figure>
+                    </button>
+                </article>                
+            </section>
+        </main>
+    </section>
+    <!-- end Projects -->
+
+    <!-- start Contact -->
+    <section class="contact" id="Contact">
+        <main class="max-w-screen-lg lg:container lg:mx-auto p-6 pt-10">
+            <header class="main-heading">
+                <h2 class="relative text-slate-900 text-center capitalize font-playfair font-semibold text-3xl
+                dark:text-white dark:before:bg-white dark:after:bg-dark">Contact</h2>
+            </header>
+            <article class="main-content pt-16 pb-11 text-slate-900 dark:text-white">
+                <article class="flex flex-wrap-reverse justify-center items-center my-12 px-2 gap-y-3 xl:gap-x-4">
+                    <article class="box-form max-w-xl xl:max-w-lg md:w-1/2">
+                        <h2 class="mb-4 capitalize text-2xl md:text-3xl text-center font-playfair md:text-start font-bold text-slate-900 dark:text-white"> <span class="text-sky-500">Get </span>In Touch</h2>
+                        <p class="mb-7 font-medium">
+                            I'm eager to collaborate on new projects and gain valuable experience. 
+                            Feel free to drop me a message, and let's build something awesome!
+                        </p>
+                        <form action="https://formsubmit.co/4fac93bcdd626d59494e99a513599908" method="post" class="text-black" id="myForm">
+                            <article class="relative z-0 w-full mb-6 group">
+                                <input type="text" name="fullName" id="fullname" class="block py-2.5 px-0 w-full font-semibold bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-sky-500 focus:outline-none focus:ring-0 focus:border-sky-500 peer" placeholder=" "/>
+                                <label for="fullname" class="peer-focus:font-medium font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-sky-500 peer-focus:dark:text-sky-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Full Name</label>
+                            </article>
+                            <article class="relative z-0 w-full mb-6 group">
+                                <input type="email" name="email" id="email" class="block py-2.5 px-0 w-full font-semibold bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-sky-500 focus:outline-none focus:ring-0 focus:border-sky-500 peer" placeholder=" " autocomplete="off"/>
+                                <label for="email" class="peer-focus:font-medium font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-sky-500 peer-focus:dark:text-sky-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+                            </article>
+                            <article class="relative z-0 w-full mb-8 group">
+                                <textarea name="message" id="message" class="block py-2.5 px-0 w-full font-semibold placeholder:text-sm placeholder:font-medium bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-sky-500 focus:outline-none focus:ring-0 focus:border-sky-500 dark:placeholder:text-gray-400 focus:placeholder:text-sky-500 dark:focus:placeholder:text-sky-500 peer" placeholder="Message" cols="" rows="1"></textarea>
+                            </article>
+                            <input type="hidden" name="_next" value="https://younessmouloudi.github.io/MyPortfolio/" readonly>
+                            <input type="hidden" name="_captcha" value="false" readonly>
+                            <input type="hidden" name="_template" value="table" readonly>
+                            <button type="submit" class="text-slate-900 tracking-wide font-bold bg-sky-400 hover:text-slate-50 hover:bg-slate-900 dark:text-slate-900 dark:hover:bg-slate-50 focus:ring-2 focus:outline-none focus:ring-sky-300 rounded-lg w-full sm:w-auto text-sm px-5 py-2 text-center dark:bg-sky-500 dark:hovesr:bg-blue-700 dark:focus:ring-sky-800" title="Send The Form">
+                                Send 
+                                <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="inline-block text-lg ms-3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            </button>
+                        </form>
+                    </article>
+                    <figure class="box-image w-full md:w-1/2">
+                        <img src="./dist/images/contactUs.svg" class="sm:max-w-lg mx-auto md:max-w-none" alt="contactUs">
+                    </figure>
+                </article>
+
+                <article id="formMessage" class="message w-2/3 sm:w-auto"></article>            
+            </article>
+        </main>
+    </section>
+    <!-- end Contact -->
+      
+    <!-- start Footer -->
+    <footer id="footer" class="text-white bg-slate-900 dark:bg-slate-100 dark:text-slate-950">
+        <main class="container mx-auto p-4 lg:p-4">
+            <article class="flex flex-col items-center justify-between lg:flex-row py-5 px-3">
+                <header class="Name text-4xl font-italiano font-bold tracking-wide capitalize -mt-1 mb-10 lg:mb-0 text-white dark:text-slate-950 text-center sm:text-start">
+                    <a href="/MyPortfolio/" class="hover:text-sky-500" title="Youness Mouloudi">Youness Mouloudi</a>
+                </header>
+                <nav class="liens text-lg mb-10 lg:mb-0 flex flex-col lg:flex-row capitalize font-medium space-y-4 lg:space-y-0 text-white dark:text-slate-950 justify-center items-center lg:space-x-5">
+                    <a href="#Home" class="hover:text-sky-500">home</a>
+                    <a href="#About" class="hover:text-sky-500">about</a>
+                    <a href="#Education&Skills" class="hover:text-sky-500">education & skills</a>
+                    <a href="#Projects" class="hover:text-sky-500">projects</a>
+                    <a href="#Contact" class="hover:text-sky-500">contact</a>
+                </nav>
+                <article class="Media flex justify-center items-center space-x-4 sm:space-x-24 lg:space-x-1 font-sans">
+                    <article data-tooltip="Morocco - Salé" class="tooltip relative p-2 text-white rounded-lg cursor-pointer dark:text-slate-900 dark:hover:text-white hover:text-slate-900 hover:bg-sky-400 dark:hover:bg-slate-900 
+                    before:text-sm sm:before:text-base before:py-1 before:px-2 sm:before:py-2 before:text-slate-900 before:bg-sky-400 after:border-t-sky-400 dark:before:text-white dark:before:bg-slate-900 dark:after:border-t-slate-900">
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 22">
+                            <path d="M8 0a7.992 7.992 0 0 0-6.583 12.535 1 1 0 0 0 .12.183l.12.146c.112.145.227.285.326.4l5.245 6.374a1 1 0 0 0 1.545-.003l5.092-6.205c.206-.222.4-.455.578-.7l.127-.155a.934.934 0 0 0 .122-.192A8.001 8.001 0 0 0 8 0Zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/>
+                        </svg>                
+                    </article>
+                    <a href="tel:+212623847491" target="_blank" data-tooltip="06 23 84 74 91" class="tooltip relative p-2 text-white rounded-lg cursor-pointer dark:text-slate-900 dark:hover:text-white hover:text-slate-900 hover:bg-sky-400 dark:hover:bg-slate-900 
+                    before:text-sm sm:before:text-base before:py-1 before:px-2 sm:before:py-2 before:text-slate-900 before:bg-sky-400 after:border-t-sky-400 dark:before:text-white dark:before:bg-slate-900 dark:after:border-t-slate-900">
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 19 18">
+                            <path d="M18 13.446a3.02 3.02 0 0 0-.946-1.985l-1.4-1.4a3.054 3.054 0 0 0-4.218 0l-.7.7a.983.983 0 0 1-1.39 0l-2.1-2.1a.983.983 0 0 1 0-1.389l.7-.7a2.98 2.98 0 0 0 0-4.217l-1.4-1.4a2.824 2.824 0 0 0-4.218 0c-3.619 3.619-3 8.229 1.752 12.979C6.785 16.639 9.45 18 11.912 18a7.175 7.175 0 0 0 5.139-2.325A2.9 2.9 0 0 0 18 13.446Z"/>
+                        </svg>                    
+                    </a>
+                    <a href="mailto:Mouloudi.younes94@gmail.com" data-tooltip="Mouloudi.younes94@gmail.com" class="tooltip relative p-2 text-white rounded-lg cursor-pointer dark:text-slate-900 dark:hover:text-white hover:text-slate-900 hover:bg-sky-400 dark:hover:bg-slate-900 
+                    before:text-sm sm:before:text-base before:py-1 before:px-2 sm:before:py-2 before:text-slate-900 before:bg-sky-400 after:border-t-sky-400 dark:before:text-white dark:before:bg-slate-900 dark:after:border-t-slate-900">
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+                            <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
+                            <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
+                        </svg>                    
+                    </a>
+                    <a href="https://www.linkedin.com/in/youness-mouloudi" target="_blank" data-tooltip="Linkedin" class="tooltip relative p-2 text-white rounded-lg cursor-pointer dark:text-slate-900 dark:hover:text-white hover:text-slate-900 hover:bg-sky-400 dark:hover:bg-slate-900 
+                    before:text-sm sm:before:text-base before:py-1 before:px-2 sm:before:py-2 before:text-slate-900 before:bg-sky-400 after:border-t-sky-400 dark:before:text-white dark:before:bg-slate-900 dark:after:border-t-slate-900">
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 16">
+                            <path fill-rule="evenodd" d="M7.979 5v1.586a3.5 3.5 0 0 1 3.082-1.574C14.3 5.012 15 7.03 15 9.655V15h-3v-4.738c0-1.13-.229-2.584-1.995-2.584-1.713 0-2.005 1.23-2.005 2.5V15H5.009V5h2.97ZM3 2.487a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" clip-rule="evenodd"/>
+                            <path d="M3 5.012H0V15h3V5.012Z"/>
+                        </svg>    
+                    </a>
+                    <a href="https://github.com/YounessMouloudi" target="_blank" data-tooltip="GitHub" class="tooltip relative p-2 text-white rounded-lg cursor-pointer dark:text-slate-900 dark:hover:text-white hover:text-slate-900 hover:bg-sky-400 dark:hover:bg-slate-900 
+                    before:text-sm sm:before:text-base before:py-1 before:px-2 sm:before:py-2 before:text-slate-900 before:bg-sky-400 after:border-t-sky-400 dark:before:text-white dark:before:bg-slate-900 dark:after:border-t-slate-900">
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+                        </svg>
+                    </a>
+                </article>
+            </article>
+            <p class="text-sm text-center text-white dark:text-slate-950 dark:font-medium capitalize tracking-wide">
+                &copy; <span id="year"></span> Youness Mouloudi
+            </p>
+        </main>
+    </footer>
+    <!-- end Footer -->
+
+    
+    <script src="./dist/js/flowbite.min.js"></script>
+    <script src="./dist/js/index.js"></script>
+    <script src="./dist/js/all.min.js"></script>
+</body>
+</html>
