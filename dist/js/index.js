@@ -48,6 +48,10 @@ linkMenu.forEach(link => {
 
 let bttnScrolling = document.getElementById("scrollingButton");
 let footer = document.getElementById('footer');
+let bodyEducation = document.querySelector(".body-education");
+let boxLeft = bodyEducation.querySelectorAll(".box-left");
+let boxRight = bodyEducation.querySelectorAll(".box-right");
+let boxtext = document.querySelectorAll(".body-education .box-text");
 
 window.onscroll = function () {
         
@@ -67,6 +71,8 @@ window.onscroll = function () {
         bttnScrolling.classList.remove("showbtn");
     }
 
+    animate();
+    
     function up() {
         window.scrollTo({
           left: 0,
@@ -77,6 +83,36 @@ window.onscroll = function () {
 
     bttnScrolling.onclick = function () {
         up();
+    }
+}
+function animate() {
+    let bodyEducPosition = bodyEducation.getBoundingClientRect().top;
+
+    if(bodyEducPosition + 150 <= window.innerHeight) {
+        bodyEducation.classList.add("animate-line");
+
+        boxLeft.forEach(item => {
+            item.classList.add("animate-afterLeft");
+        })
+        boxRight.forEach(item => {
+            item.classList.add("animate-afterRight");
+        })
+        boxtext.forEach(item => {
+            item.classList.add("animate-box");
+        })
+    }
+    else {
+        bodyEducation.classList.remove("animate-line");
+
+        boxLeft.forEach(item => {
+            item.classList.remove("animate-afterLeft");
+        })
+        boxRight.forEach(item => {
+            item.classList.remove("animate-afterRight");
+        })
+        boxtext.forEach(item => {
+            item.classList.remove("animate-box");
+        })
     }
 }
 
@@ -93,18 +129,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.getElementsByName("_next")[0].addEventListener('input', function() {
-        console.log('ss');
         this.value = "https://younessmouloudi.github.io/MyPortfolio/";
     });
 
     document.getElementsByName("_captcha")[0].addEventListener('input', function() {
-        console.log('ss');
         this.value = "false";
     });
 
     document.getElementsByName("_template")[0].addEventListener('input', function() {
         this.value = "table";
     });
+
+    animate();
+    if (window.scrollY > 600) {
+        bttnScrolling.classList.add("showbtn");
+    }
+    else {
+        bttnScrolling.classList.remove("showbtn");
+    }
+
 });
 
 function handleHashChange() {
